@@ -1,0 +1,13 @@
+server:
+  port: 8050
+spring:
+  liquibase:
+    change-log:  liquibase/changelog-master.yml
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    username: AccountTest
+    password: 1234567890
+    url: jdbc:postgresql://localhost:5432/TaskManagementService
+    driver-class-name: org.postgresql.Driver
